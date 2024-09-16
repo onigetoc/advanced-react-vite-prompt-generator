@@ -27,7 +27,7 @@ This project is based on the [Advanced Prompt Generator](https://github.com/shpe
 ## Prerequisites
 
 - A modern web browser that supports HTML5, CSS3, and JavaScript.
-- Access to OpenAI's API and a valid API key.
+- Access to OpenAI's & Groq API and a valid API key.
 
 ## Installation
 
