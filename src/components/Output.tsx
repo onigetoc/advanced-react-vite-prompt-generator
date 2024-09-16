@@ -26,9 +26,10 @@ const Output: React.FC<OutputProps> = ({ output, setOutput, setApiResponse, form
     console.log(`formData.creativity: ${formData.creativity}`);
     formData.creativity = formData.creativity || 0.5;
 
-    let selectedApiKey = apiKeys[formData.model.split('-')[0]];
+    let modelPrefix = formData.model.split('-')[0];
+    let selectedApiKey = apiKeys[modelPrefix === 'o1' ? 'gpt' : modelPrefix];
 
-    if (formData.model.startsWith('llama') || formData.model.startsWith('mixtral')) {
+    if (formData.model.startsWith('llama') || formData.model.startsWith('mixtral') || formData.model.startsWith('gemma')  || formData.model.startsWith('gemma2')) {
       selectedApiKey = apiKeys.groq || '';
     }
 

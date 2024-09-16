@@ -15,10 +15,8 @@ dist-ssr
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
-.aider*
 .env
 .idea
-.prompts
 .DS_Store
 *.local
 *.suo
@@ -26,4 +24,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.prompts*
+.aider*
 .prettierrc

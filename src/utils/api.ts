@@ -77,6 +77,7 @@ export async function sendApiRequest(formData: FormData, apiKey: string): Promis
 
   } catch (error) {
     console.error('Error in sendApiRequest:', error);
+    toast.error(`Message: ${error}`);
     throw error;
   }
 }

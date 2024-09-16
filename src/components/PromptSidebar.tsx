@@ -26,7 +26,10 @@ const PromptSidebar: React.FC<PromptSidebarProps> = ({ setOutput, setFormData: u
     const [selectedApiKey, setSelectedApiKey] = useState<string>(apiKeys.gpt);
 
     useEffect(() => {
-      const apiKeyPrefix = localFormData.model.split('-')[0];
+      let apiKeyPrefix = localFormData.model.split('-')[0];
+
+      apiKeyPrefix = apiKeyPrefix === "o1" ? "gpt" : apiKeyPrefix;
+      // alert(apiKeyPrefix)
       setSelectedApiKey(apiKeys[apiKeyPrefix] || '');
     }, [localFormData.model, apiKeys]);
 

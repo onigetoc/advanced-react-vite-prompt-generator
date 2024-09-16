@@ -80,7 +80,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkMode, setIsDarkMode }) => {
             />
           </div>
 
-          <div className="mb-2">
+          <div className="mb-2 hidden">
             <div className="flex justify-between items-center">
               <label className="block font-bold" htmlFor="claudeKey">
                 Claude (anthropic) API Key:
