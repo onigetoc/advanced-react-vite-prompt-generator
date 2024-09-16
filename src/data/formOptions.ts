@@ -21,7 +21,7 @@ const models = Object.entries(MODEL_CONFIGS).map(([key, config]) => ({
 }));
 
 export const formOptions = {
-  roles: ['', 'Role 1', 'Role 2', 'Role 3'],
+  roles: [''],
   models, // Utilisation des modèles transformés
   modes: ['Roleplay', 'Story'],
   verbosityOptions: ['Off', 'On'],
